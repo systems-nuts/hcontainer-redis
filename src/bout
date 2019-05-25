@@ -1,0 +1,372 @@
+execve("./redis-benchmark", ["./redis-benchmark"], [/* 28 vars */]) = 0
+mmap(NULL, 2097456, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f18568fc000
+arch_prctl(ARCH_SET_FS, 0x7f18568ffee0) = 0
+set_tid_address(0x7f18568fff18)         = 32404
+syscall_332(0x7ffd731f9e68, 0, 0x20000, 0x22, 0x900000, 0) = -1 (errno 38)
+brk(NULL)                               = 0x2cf2000
+brk(0x2cf3000)                          = 0x2cf3000
+getpid()                                = 32404
+open("/proc/32404/maps", O_RDONLY)      = 3
+syscall_332(0x7ffd731f9e68, 0, 0x50d68c, 0x5, 0x2cf2040, 0x72) = -1 (errno 38)
+readv(3, [{"", 0}, {"004ff000-00500000 r--p 00000000 "..., 1024}], 2) = 1024
+lseek(3, -109, SEEK_CUR)                = 915
+close(3)                                = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+syscall_332(0x7ffd731f9e68, 0, 0xe, 0x7ffd731f9ec0, 0xfefefefefefefe53, 0x3d3d3d3d3d3d3d3d) = -1 (errno 38)
+syscall_332(0x7ffd731f9e48, 0x7ffd731f9b37, 0, 0xf, 0x12889, 0xf) = -1 (errno 38)
+open("redis-benchmark_aarch64", O_RDONLY) = 3
+lseek(3, 0, SEEK_END)                   = 14293424
+mmap(NULL, 14293424, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1855b5a000
+brk(0x2cf6000)                          = 0x2cf6000
+syscall_332(0x7ffd731f9e68, 0, 0x10, 0x2, 0xfefefefefefefe53, 0x3d3d3d3d3d3d3d3d) = -1 (errno 38)
+syscall_332(0x7ffd731f9e48, 0x7ffd731f9b39, 0, 0xf, 0x12889, 0xf) = -1 (errno 38)
+open("redis-benchmark_powerpc64", O_RDONLY) = -1 ENOENT (No such file or directory)
+syscall_332(0x7ffd731f9e68, 0, 0xd, 0, 0xfefefefefefefe53, 0x3d3d3d3d3d3d3d3d) = -1 (errno 38)
+syscall_332(0x7ffd731f9e48, 0x7ffd731f9b36, 0, 0xf, 0x12889, 0xf) = -1 (errno 38)
+open("redis-benchmark_x86-64", O_RDONLY) = 4
+lseek(4, 0, SEEK_END)                   = 14054265
+mmap(NULL, 14054265, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f1854df2000
+brk(0x2cf9000)                          = 0x2cf9000
+readlink("/etc/je_malloc.conf", 0x7ffd731f92f0, 4096) = -1 ENOENT (No such file or directory)
+open("/proc/sys/vm/overcommit_memory", O_RDONLY|O_CLOEXEC) = 5
+read(5, "0", 1)                         = 1
+close(5)                                = 0
+open("/sys/kernel/mm/transparent_hugepage/enabled", O_RDONLY) = 5
+read(5, "[always] madvise never\n", 24) = 23
+close(5)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f1854df1000
+madvise(0x7f1854df1000, 4096, 0x8 /* MADV_??? */) = 0
+munmap(0x7f1854df1000, 4096)            = 0
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f1854bf2000
+munmap(0x7f1854bf2000, 2097152)         = 0
+mmap(NULL, 4190208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f18549f3000
+munmap(0x7f18549f3000, 53248)           = 0
+munmap(0x7f1854c00000, 2039808)         = 0
+brk(NULL)                               = 0x2cf9000
+clock_gettime(CLOCK_MONOTONIC_COARSE, {6734231, 902496435}) = 0
+clock_gettime(CLOCK_MONOTONIC_COARSE, {6734231, 902496435}) = 0
+clock_gettime(CLOCK_MONOTONIC_COARSE, {6734231, 902496435}) = 0
+sched_getaffinity(0, 128, [ffffffff, 0, 0, 0, 0, 0, 0, 0]) = 8
+clock_gettime(CLOCK_REALTIME, {1556108118, 101482305}) = 0
+rt_sigaction(SIGHUP, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x513e80}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPIPE, {SIG_IGN, [], SA_RESTORER|SA_RESTART, 0x513e80}, {SIG_DFL, [], 0}, 8) = 0
+mmap(NULL, 2097152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f1854800000
+mmap(NULL, 4194304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7f1854400000
+clock_gettime(CLOCK_REALTIME, {1556108118, 102707744}) = 0
+epoll_create1(0)                        = 5
+clock_gettime(CLOCK_REALTIME, {1556108118, 102880914}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 6
+fcntl(6, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(6, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+connect(6, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(6, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 6, {EPOLLOUT, {u32=6, u64=6}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 7
+fcntl(7, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(7, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+connect(7, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(7, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 7, {EPOLLOUT, {u32=7, u64=7}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 8
+fcntl(8, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(8, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+connect(8, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(8, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 8, {EPOLLOUT, {u32=8, u64=8}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 9
+fcntl(9, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+connect(9, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(9, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 9, {EPOLLOUT, {u32=9, u64=9}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 10
+fcntl(10, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(10, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(10, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(10, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 10, {EPOLLOUT, {u32=10, u64=10}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 11
+fcntl(11, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(11, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(11, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 11, {EPOLLOUT, {u32=11, u64=11}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 12
+fcntl(12, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(12, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(12, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(12, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 12, {EPOLLOUT, {u32=12, u64=12}}) = 0
+brk(0x2cfa000)                          = 0x2cfa000
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 13
+fcntl(13, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(13, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(13, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(13, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 13, {EPOLLOUT, {u32=13, u64=13}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 14
+fcntl(14, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(14, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(14, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(14, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 14, {EPOLLOUT, {u32=14, u64=14}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 15
+fcntl(15, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(15, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(15, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(15, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 15, {EPOLLOUT, {u32=15, u64=15}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 16
+fcntl(16, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(16, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(16, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(16, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 16, {EPOLLOUT, {u32=16, u64=16}}) = 0
+brk(0x2cfb000)                          = 0x2cfb000
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 17
+fcntl(17, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(17, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(17, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(17, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 17, {EPOLLOUT, {u32=17, u64=17}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 18
+fcntl(18, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(18, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(18, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(18, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 18, {EPOLLOUT, {u32=18, u64=18}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 19
+fcntl(19, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(19, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(19, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(19, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 19, {EPOLLOUT, {u32=19, u64=19}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 20
+fcntl(20, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(20, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(20, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(20, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 20, {EPOLLOUT, {u32=20, u64=20}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 21
+fcntl(21, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(21, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(21, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(21, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 21, {EPOLLOUT, {u32=21, u64=21}}) = 0
+brk(0x2cfc000)                          = 0x2cfc000
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 22
+fcntl(22, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(22, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(22, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(22, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 22, {EPOLLOUT, {u32=22, u64=22}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 23
+fcntl(23, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(23, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(23, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(23, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 23, {EPOLLOUT, {u32=23, u64=23}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 24
+fcntl(24, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(24, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(24, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(24, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 24, {EPOLLOUT, {u32=24, u64=24}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 25
+fcntl(25, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(25, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(25, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(25, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 25, {EPOLLOUT, {u32=25, u64=25}}) = 0
+brk(0x2cfd000)                          = 0x2cfd000
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 26
+fcntl(26, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(26, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(26, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(26, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 26, {EPOLLOUT, {u32=26, u64=26}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 27
+fcntl(27, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(27, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(27, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(27, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 27, {EPOLLOUT, {u32=27, u64=27}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 28
+fcntl(28, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(28, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(28, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(28, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 28, {EPOLLOUT, {u32=28, u64=28}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 29
+fcntl(29, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(29, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(29, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(29, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 29, {EPOLLOUT, {u32=29, u64=29}}) = 0
+brk(0x2cfe000)                          = 0x2cfe000
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 30
+fcntl(30, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(30, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(30, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(30, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 30, {EPOLLOUT, {u32=30, u64=30}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 31
+fcntl(31, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(31, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(31, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(31, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 31, {EPOLLOUT, {u32=31, u64=31}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 32
+fcntl(32, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(32, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(32, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(32, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 32, {EPOLLOUT, {u32=32, u64=32}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 33
+fcntl(33, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(33, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(33, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(33, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 33, {EPOLLOUT, {u32=33, u64=33}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 34
+fcntl(34, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(34, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(34, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(34, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 34, {EPOLLOUT, {u32=34, u64=34}}) = 0
+brk(0x2cff000)                          = 0x2cff000
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 35
+fcntl(35, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(35, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(35, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(35, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 35, {EPOLLOUT, {u32=35, u64=35}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 36
+fcntl(36, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(36, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(36, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(36, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 36, {EPOLLOUT, {u32=36, u64=36}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 37
+fcntl(37, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(37, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(37, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(37, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 37, {EPOLLOUT, {u32=37, u64=37}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 38
+fcntl(38, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(38, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(38, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(38, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 38, {EPOLLOUT, {u32=38, u64=38}}) = 0
+brk(0x2d00000)                          = 0x2d00000
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 39
+fcntl(39, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(39, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(39, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(39, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 39, {EPOLLOUT, {u32=39, u64=39}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 40
+fcntl(40, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(40, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(40, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(40, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 40, {EPOLLOUT, {u32=40, u64=40}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 41
+fcntl(41, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(41, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(41, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(41, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 41, {EPOLLOUT, {u32=41, u64=41}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 42
+fcntl(42, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(42, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(42, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(42, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 42, {EPOLLOUT, {u32=42, u64=42}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 43
+fcntl(43, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(43, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(43, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(43, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 43, {EPOLLOUT, {u32=43, u64=43}}) = 0
+brk(0x2d01000)                          = 0x2d01000
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 44
+fcntl(44, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(44, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(44, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(44, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 44, {EPOLLOUT, {u32=44, u64=44}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 45
+fcntl(45, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(45, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(45, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(45, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 45, {EPOLLOUT, {u32=45, u64=45}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 46
+fcntl(46, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(46, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(46, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(46, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 46, {EPOLLOUT, {u32=46, u64=46}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 47
+fcntl(47, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(47, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(47, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(47, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 47, {EPOLLOUT, {u32=47, u64=47}}) = 0
+brk(0x2d02000)                          = 0x2d02000
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 48
+fcntl(48, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(48, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(48, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(48, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 48, {EPOLLOUT, {u32=48, u64=48}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 49
+fcntl(49, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(49, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(49, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(49, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 49, {EPOLLOUT, {u32=49, u64=49}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 50
+fcntl(50, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(50, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(50, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(50, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 50, {EPOLLOUT, {u32=50, u64=50}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 51
+fcntl(51, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(51, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(51, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(51, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 51, {EPOLLOUT, {u32=51, u64=51}}) = 0
+brk(0x2d03000)                          = 0x2d03000
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 52
+fcntl(52, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(52, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(52, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(52, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 52, {EPOLLOUT, {u32=52, u64=52}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 53
+fcntl(53, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(53, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(53, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(53, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 53, {EPOLLOUT, {u32=53, u64=53}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 54
+fcntl(54, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(54, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(54, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(54, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 54, {EPOLLOUT, {u32=54, u64=54}}) = 0
+socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 55
+fcntl(55, F_GETFL)                      = 0x2 (flags O_RDWR)
+fcntl(55, F_SETFL, O_RDWR|O_NONBLOCK)   = 0
+connect(55, {sa_family=AF_INET, sin_port=htons(6379), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+setsockopt(55, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+epoll_ctl(5, EPOLL_CTL_ADD, 55, {EPOLLOUT, {u32=55, u64=55}}) = 0
+clock_gettime(CLOCK_REALTIME, {1556108118, 113837662}) = 0
+clock_gettime(CLOCK_REALTIME, {1556108118, 113870234}) = 0
+epoll_pwait(5, [{EPOLLOUT, {u32=6, u64=6}}, {EPOLLOUT, {u32=7, u64=7}}, {EPOLLOUT, {u32=8, u64=8}}, {EPOLLOUT, {u32=9, u64=9}}, {EPOLLOUT, {u32=10, u64=10}}, {EPOLLOUT, {u32=11, u64=11}}, {EPOLLOUT, {u32=12, u64=12}}, {EPOLLOUT, {u32=13, u64=13}}, {EPOLLOUT, {u32=14, u64=14}}, {EPOLLOUT, {u32=15, u64=15}}, {EPOLLOUT, {u32=16, u64=16}}, {EPOLLOUT, {u32=17, u64=17}}, {EPOLLOUT, {u32=18, u64=18}}, {EPOLLOUT, {u32=19, u64=19}}, {EPOLLOUT, {u32=20, u64=20}}, {EPOLLOUT, {u32=21, u64=21}}, {EPOLLOUT, {u32=22, u64=22}}, {EPOLLOUT, {u32=23, u64=23}}, {EPOLLOUT, {u32=24, u64=24}}, {EPOLLOUT, {u32=25, u64=25}}, {EPOLLOUT, {u32=26, u64=26}}, {EPOLLOUT, {u32=27, u64=27}}, {EPOLLOUT, {u32=28, u64=28}}, {EPOLLOUT, {u32=29, u64=29}}, {EPOLLOUT, {u32=30, u64=30}}, {EPOLLOUT, {u32=31, u64=31}}, {EPOLLOUT, {u32=32, u64=32}}, {EPOLLOUT, {u32=33, u64=33}}, {EPOLLOUT, {u32=34, u64=34}}], 10240, 0, NULL, 8) = 29
+--- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x400000000} ---
++++ killed by SIGSEGV (core dumped) +++

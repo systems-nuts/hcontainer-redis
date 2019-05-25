@@ -1,0 +1,705 @@
+    [34mCC[0m [33madlist.o[0m
+    [34mCC[0m [33mquicklist.o[0m
+    [34mCC[0m [33mae.o[0m
+    [34mCC[0m [33manet.o[0m
+anet.c:63:49: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "fcntl(F_GETFL): %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:73:60: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "fcntl(F_SETFL,O_NONBLOCK): %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:96:58: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "setsockopt SO_KEEPALIVE: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:108:60: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "setsockopt TCP_KEEPIDLE: %s\n", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:118:61: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "setsockopt TCP_KEEPINTVL: %s\n", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:126:59: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "setsockopt TCP_KEEPCNT: %s\n", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:140:57: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "setsockopt TCP_NODELAY: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:161:55: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "setsockopt SO_SNDBUF: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:171:58: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "setsockopt SO_KEEPALIVE: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:185:57: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "setsockopt SO_SNDTIMEO: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:210:33: warning: incompatible pointer types passing 'const char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "%s", gai_strerror(rv));
+                                ^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:238:58: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "setsockopt SO_REUSEADDR: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:247:50: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "creating socket: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:276:33: warning: incompatible pointer types passing 'const char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "%s", gai_strerror(rv));
+                                ^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:293:41: warning: incompatible pointer types passing 'const char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+                anetSetError(err, "%s", gai_strerror(rv));
+                                        ^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:304:47: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+                anetSetError(err, "bind: %s", strerror(errno));
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:323:50: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "creating socket: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:388:42: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "connect: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:437:39: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "bind: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:443:41: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "listen: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:453:45: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "setsockopt: %s", strerror(errno));
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:473:33: warning: incompatible pointer types passing 'const char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+        anetSetError(err, "%s", gai_strerror(rv));
+                                ^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:486:63: warning: incompatible integer to pointer conversion passing 'int' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wint-conversion]
+        anetSetError(err, "unable to bind socket, errno: %d", errno);
+                                                              ^~~~~
+/usr/local/popcorn/aarch64/include/errno.h:13:15: note: expanded from macro 'errno'
+#define errno (*__errno_location())
+              ^~~~~~~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+anet.c:534:49: warning: incompatible pointer types passing 'char *' to parameter of type '__va_list_tag *' (aka 'struct __va_list_tag *') [-Wincompatible-pointer-types]
+                anetSetError(err, "accept: %s", strerror(errno));
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+anet.c:53:44: note: expanded from macro 'anetSetError'
+        vsnprintf(__err, ANET_ERR_LEN, __fmt, __VA_ARGS__);             \
+                                              ^
+/usr/local/popcorn/aarch64/include/stdio.h:110:79: note: passing argument to parameter here
+int vsnprintf(char *__restrict, size_t, const char *__restrict, __isoc_va_list);
+                                                                              ^
+24 warnings generated.
+    [34mCC[0m [33mdict.o[0m
+make: Warning: File 'server.h' has modification time 105 s in the future
+    [34mCC[0m [33mserver.o[0m
+server.c:2112:9: error: too few arguments provided to function-like macro invocation
+        serverPanic("Can't create event loop timers.");
+        ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:102: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                                                                     ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:169:9: note: macro '__call_vaarg_3__2' defined here
+#define __call_vaarg_3__2(__func, __nb_arg, __def, __a0, __a1, __a2)    \
+        ^
+server.c:2112:9: error: use of undeclared identifier '__call_vaarg_3__2'
+        serverPanic("Can't create event loop timers.");
+        ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:49: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                ^
+server.c:2122:17: error: too few arguments provided to function-like macro invocation
+                serverPanic(
+                ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:102: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                                                                     ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:169:9: note: macro '__call_vaarg_3__2' defined here
+#define __call_vaarg_3__2(__func, __nb_arg, __def, __a0, __a1, __a2)    \
+        ^
+server.c:2122:17: error: use of undeclared identifier '__call_vaarg_3__2'
+                serverPanic(
+                ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:49: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                ^
+server.c:2127:44: error: too few arguments provided to function-like macro invocation
+        acceptUnixHandler,NULL) == AE_ERR) serverPanic("Unrecoverable error creating server.sofd file event.");
+                                           ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:102: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                                                                     ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:169:9: note: macro '__call_vaarg_3__2' defined here
+#define __call_vaarg_3__2(__func, __nb_arg, __def, __a0, __a1, __a2)    \
+        ^
+server.c:2127:44: error: use of undeclared identifier '__call_vaarg_3__2'
+        acceptUnixHandler,NULL) == AE_ERR) serverPanic("Unrecoverable error creating server.sofd file event.");
+                                           ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:49: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                ^
+server.c:2134:13: error: too few arguments provided to function-like macro invocation
+            serverPanic(
+            ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:102: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                                                                     ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:169:9: note: macro '__call_vaarg_3__2' defined here
+#define __call_vaarg_3__2(__func, __nb_arg, __def, __a0, __a1, __a2)    \
+        ^
+server.c:2134:13: error: use of undeclared identifier '__call_vaarg_3__2'
+            serverPanic(
+            ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:49: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                ^
+server.c:2195:22: error: too few arguments provided to function-like macro invocation
+            default: serverPanic("Unsupported command flag"); break;
+                     ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:102: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                                                                     ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:169:9: note: macro '__call_vaarg_3__2' defined here
+#define __call_vaarg_3__2(__func, __nb_arg, __def, __a0, __a1, __a2)    \
+        ^
+server.c:2195:22: error: use of undeclared identifier '__call_vaarg_3__2'
+            default: serverPanic("Unsupported command flag"); break;
+                     ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:49: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                ^
+server.c:2548:9: warning: incompatible integer to pointer conversion passing 'vaarg_arg_t' (aka 'long') to parameter of type 'const char *' [-Wint-conversion]
+        call_vaarg_2(addReplyErrorFormat,c,"unknown command `%s`, with args beginning with: %s",
+        ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:106:36: note: expanded from macro 'call_vaarg_2'
+#define call_vaarg_2(__func, ...) (__call_vaarg_2(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:105:37: note: expanded from macro '__call_vaarg_2'
+#define __call_vaarg_2(__func, ...) __VAARG2_DISP(__call_vaarg_2_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:103:37: note: expanded from macro '__VAARG2_DISP'
+#define __VAARG2_DISP(b,__func,...) __VAARG2_CONCAT(b,__VAARG2_NARGS(__VA_ARGS__))(__func,__VAARG2_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:102:30: note: expanded from macro '__VAARG2_CONCAT'
+#define __VAARG2_CONCAT(a,b) __VAARG2_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:101:32: note: expanded from macro '__VAARG2_CONCAT_X'
+#define __VAARG2_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_2_3
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:93:87: note: expanded from macro '__call_vaarg_2_3'
+#define __call_vaarg_2_3(__func,__nb_arg,n,a,b,c) __call_vaarg_2__3(__func,__nb_arg,n,__scc(a),__scc(b),__scc(c))
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:16:18: note: expanded from macro '__scc'
+#define __scc(X) ((vaarg_arg_t) (X))
+                 ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:123:16: note: expanded from macro '__call_vaarg_2__3'
+        __func(__def, __a0, (vaarg_tab_t*)&__vaarg_tab);                        \
+                      ^
+./server.h:1484:50: note: passing argument to parameter 'fmt' here
+ void addReplyErrorFormat(client *c, const char *fmt, vaarg_tab_t* __vaarg_tab);
+                                                 ^
+server.c:2555:9: warning: incompatible integer to pointer conversion passing 'vaarg_arg_t' (aka 'long') to parameter of type 'const char *' [-Wint-conversion]
+        call_vaarg_2(addReplyErrorFormat,c,"wrong number of arguments for '%s' command",
+        ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:106:36: note: expanded from macro 'call_vaarg_2'
+#define call_vaarg_2(__func, ...) (__call_vaarg_2(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:105:37: note: expanded from macro '__call_vaarg_2'
+#define __call_vaarg_2(__func, ...) __VAARG2_DISP(__call_vaarg_2_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:103:37: note: expanded from macro '__VAARG2_DISP'
+#define __VAARG2_DISP(b,__func,...) __VAARG2_CONCAT(b,__VAARG2_NARGS(__VA_ARGS__))(__func,__VAARG2_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:102:30: note: expanded from macro '__VAARG2_CONCAT'
+#define __VAARG2_CONCAT(a,b) __VAARG2_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:101:32: note: expanded from macro '__VAARG2_CONCAT_X'
+#define __VAARG2_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_2_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:92:85: note: expanded from macro '__call_vaarg_2_2'
+#define __call_vaarg_2_2(__func,__nb_arg,n,a,b) __call_vaarg_2__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:16:18: note: expanded from macro '__scc'
+#define __scc(X) ((vaarg_arg_t) (X))
+                 ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:114:16: note: expanded from macro '__call_vaarg_2__2'
+        __func(__def, __a0, (vaarg_tab_t*)&__vaarg_tab);                \
+                      ^
+./server.h:1484:50: note: passing argument to parameter 'fmt' here
+ void addReplyErrorFormat(client *c, const char *fmt, vaarg_tab_t* __vaarg_tab);
+                                                 ^
+server.c:2898:9: warning: incompatible integer to pointer conversion passing 'vaarg_arg_t' (aka 'long') to parameter of type 'const char *' [-Wint-conversion]
+        call_vaarg_2(addReplyErrorFormat,c,"wrong number of arguments for '%s' command",
+        ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:106:36: note: expanded from macro 'call_vaarg_2'
+#define call_vaarg_2(__func, ...) (__call_vaarg_2(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:105:37: note: expanded from macro '__call_vaarg_2'
+#define __call_vaarg_2(__func, ...) __VAARG2_DISP(__call_vaarg_2_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:103:37: note: expanded from macro '__VAARG2_DISP'
+#define __VAARG2_DISP(b,__func,...) __VAARG2_CONCAT(b,__VAARG2_NARGS(__VA_ARGS__))(__func,__VAARG2_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:102:30: note: expanded from macro '__VAARG2_CONCAT'
+#define __VAARG2_CONCAT(a,b) __VAARG2_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:101:32: note: expanded from macro '__VAARG2_CONCAT_X'
+#define __VAARG2_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_2_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:92:85: note: expanded from macro '__call_vaarg_2_2'
+#define __call_vaarg_2_2(__func,__nb_arg,n,a,b) __call_vaarg_2__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:16:18: note: expanded from macro '__scc'
+#define __scc(X) ((vaarg_arg_t) (X))
+                 ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:114:16: note: expanded from macro '__call_vaarg_2__2'
+        __func(__def, __a0, (vaarg_tab_t*)&__vaarg_tab);                \
+                      ^
+./server.h:1484:50: note: passing argument to parameter 'fmt' here
+ void addReplyErrorFormat(client *c, const char *fmt, vaarg_tab_t* __vaarg_tab);
+                                                 ^
+server.c:3873:5: error: too few arguments provided to function-like macro invocation
+    serverPanic("Redis aborting for OUT OF MEMORY");
+    ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:102: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                                                                     ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:169:9: note: macro '__call_vaarg_3__2' defined here
+#define __call_vaarg_3__2(__func, __nb_arg, __def, __a0, __a1, __a2)    \
+        ^
+server.c:3873:5: error: use of undeclared identifier '__call_vaarg_3__2'
+    serverPanic("Redis aborting for OUT OF MEMORY");
+    ^
+./server.h:457:31: note: expanded from macro 'serverPanic'
+#define serverPanic(msg, ...) call_vaarg_3(_serverPanic, __FILE__,__LINE__, msg, ##__VA_ARGS__),_exit(1)
+                              ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:167:36: note: expanded from macro 'call_vaarg_3'
+#define call_vaarg_3(__func, ...) (__call_vaarg_3(__func, __VA_ARGS__))
+                                   ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:166:37: note: expanded from macro '__call_vaarg_3'
+#define __call_vaarg_3(__func, ...) __VAARG3_DISP(__call_vaarg_3_, __func, __VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:164:37: note: expanded from macro '__VAARG3_DISP'
+#define __VAARG3_DISP(b,__func,...) __VAARG3_CONCAT(b,__VAARG3_NARGS(__VA_ARGS__))(__func,__VAARG3_NARGS(__VA_ARGS__, dummy),__VA_ARGS__)
+                                    ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:163:30: note: expanded from macro '__VAARG3_CONCAT'
+#define __VAARG3_CONCAT(a,b) __VAARG3_CONCAT_X(a,b)
+                             ^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:162:32: note: expanded from macro '__VAARG3_CONCAT_X'
+#define __VAARG3_CONCAT_X(a,b) a##b
+                               ^
+<scratch space>:73:1: note: expanded from here
+__call_vaarg_3_2
+^
+/usr/local/popcorn/aarch64/include/popcorn-vaarg.h:153:49: note: expanded from macro '__call_vaarg_3_2'
+#define __call_vaarg_3_2(__func,__nb_arg,n,a,b) __call_vaarg_3__2(__func,__nb_arg,n,__scc(a),__scc(b))
+                                                ^
+0  libLLVMSupport.so.3.7       0x00007f84a1002e6a llvm::sys::PrintStackTrace(llvm::raw_ostream&) + 59
+1  libLLVMSupport.so.3.7       0x00007f84a10031c2
+2  libLLVMSupport.so.3.7       0x00007f84a1001c46
+3  libc.so.6                   0x00007f849e3d64b0
+4  libclangCodeGen.so.3.7      0x00007f849f8a0c56
+5  libclangCodeGen.so.3.7      0x00007f849fa59b2b
+6  libclangParse.so.3.7        0x00007f8499c3a8fe clang::ParseAST(clang::Sema&, bool, bool) + 801
+7  libclangFrontend.so.3.7     0x00007f849ef8ae89 clang::ASTFrontendAction::ExecuteAction() + 323
+8  libclangCodeGen.so.3.7      0x00007f849fa5752f clang::EmitMultiObjAction::ExecuteAction() + 1095
+9  libclangFrontend.so.3.7     0x00007f849ef8a90e clang::FrontendAction::Execute() + 154
+10 libclangFrontend.so.3.7     0x00007f849ef3c14c clang::CompilerInstance::ExecuteAction(clang::FrontendAction&) + 800
+11 libclangFrontendTool.so.3.7 0x00007f849eaf80a5 clang::ExecuteCompilerInvocation(clang::CompilerInstance*) + 1105
+12 clang-3.7                   0x0000000000447eb1 cc1_main(llvm::ArrayRef<char const*>, char const*, void*) + 1064
+13 clang-3.7                   0x000000000043ea45
+14 clang-3.7                   0x000000000043ef6f main + 1087
+15 libc.so.6                   0x00007f849e3c1830 __libc_start_main + 240
+16 clang-3.7                   0x000000000043d119 _start + 41
+Stack dump:
+0.	Program arguments: /share/karaoui/criu-project/popcorn-compiler/install/bin/clang-3.7 -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -main-file-name server.c -mrelocation-model static -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -g -dwarf-column-info -coverage-file /share/karaoui/criu-project/servers/redis/redis/src/server.c -nostdsysteminc -nobuiltininc -resource-dir /share/karaoui/criu-project/popcorn-compiler/install/bin/../lib/clang/3.7.1 -isystem /usr/local/popcorn/aarch64/include -D POPCORN -D REDIS_STATIC= -D USE_JEMALLOC -I ../deps/hiredis -I ../deps/linenoise -I ../deps/lua/src -I ../deps/jemalloc/include -O0 -Wno-gnu-statement-expression -Wno-unknown-attributes -Wno-gnu-zero-variadic-macro-arguments -Wno-gnu-statement-expression -Wno-unknown-attributes -Wno-gnu-zero-variadic-macro-arguments -pedantic -std=c99 -fdebug-compilation-dir /share/karaoui/criu-project/servers/redis/redis/src -ferror-limit 19 -fmacro-backtrace-limit 0 -fmessage-length 0 -ftls-model=initial-exec -mstackrealign -fobjc-runtime=gcc -fno-common -fdiagnostics-show-option -ffunction-sections -fdata-sections -popcorn-alignment -popcorn-migratable -mllvm -popcorn-instrument=migration -mllvm -optimize-regalloc -mllvm -fast-isel=false -o server.o -x c server.c 
+1.	<eof> parser at end of file
+clang-3.7: error: unable to execute command: Segmentation fault (core dumped)
+clang-3.7: error: clang frontend command failed due to signal (use -v to see invocation)
+clang version 3.7.1 (tags/RELEASE_371/final 320332)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+clang-3.7: note: diagnostic msg: PLEASE submit a bug report to http://llvm.org/bugs/ and include the crash backtrace, preprocessed source, and associated run script.
+clang-3.7: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang-3.7: note: diagnostic msg: /tmp/server-980dcc.c
+clang-3.7: note: diagnostic msg: /tmp/server-980dcc.sh
+clang-3.7: note: diagnostic msg: 
+
+********************
+make: *** [server.o] Error 254

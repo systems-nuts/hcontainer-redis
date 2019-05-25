@@ -1,0 +1,2379 @@
+cd src && make all
+make[1]: Entering directory '/share/karaoui/criu-project/servers/redis/redis/src'
+make[1]: Warning: File 'ae.o' has modification time 62 s in the future
+    [34;1mLINK[0m [37;1mredis-server[0m
++ echo '/usr/local/popcorn/bin/popcorn-link: called with -rdynamic -o redis-server adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o'
+/usr/local/popcorn/bin/popcorn-link: called with -rdynamic -o redis-server adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
++ export POPCORN_COMPILATION_SCRIPTS=1
++ POPCORN_COMPILATION_SCRIPTS=1
++ POPCORN=/usr/local/popcorn
++ ARM64_POPCORN=/usr/local/popcorn/aarch64
++ CC=/usr/local/popcorn/bin/clang
++ HET_CFLAGS='-nostdinc -nostdlib -popcorn-migratable -fno-common -ftls-model=initial-exec'
++ ARM64_INC='-isystem /usr/local/popcorn/aarch64/include'
++ options=()
++ eoo=0
++ COMPILE_ONLY=0
++ LINK_ONLY=0
++ OBJS=()
++ [[ -n -rdynamic ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -o ]]
++ (( eoo ))
++ case "$1" in
++ BIN=redis-server
++ shift
++ shift
++ [[ -n adlist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n quicklist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n ae.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n anet.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n dict.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n server.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n sds.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n zmalloc.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n lzf_c.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n lzf_d.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n pqsort.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n zipmap.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n sha1.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n ziplist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n release.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n networking.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n util.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n object.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n db.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n replication.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n rdb.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_string.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_list.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_set.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_zset.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_hash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n config.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n aof.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n pubsub.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n multi.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n debug.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n sort.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n intset.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n syncio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n cluster.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n crc16.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n endianconv.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n slowlog.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n scripting.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n bio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n rio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n rand.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n memtest.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n crc64.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n bitops.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n sentinel.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n notify.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n setproctitle.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n blocked.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n hyperloglog.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n latency.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n sparkline.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n redis-check-rdb.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n redis-check-aof.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n geo.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n lazyfree.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n module.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n evict.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n expire.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n geohash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n geohash_helper.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n childinfo.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n defrag.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n siphash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n rax.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_stream.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n listpack.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n localtime.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n lolwut.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n lolwut5.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n '' ]]
++ ALL_OBJS='adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o'
++ echo obj: otab adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
+obj: otab adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
++ echo OBJS: adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
+OBJS: adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
++ (( COMPILE_ONLY ))
++ SUFF_OBJS='adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o'
++ (( LINK_ONLY ))
++ echo obj: tab adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
+obj: tab adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
++ echo opt: -rdynamic
+opt: -rdynamic
++ '[' -z redis-server ']'
++ /usr/local/popcorn/bin/clang -nostdinc -nostdlib -popcorn-migratable -fno-common -ftls-model=initial-exec -isystem /usr/local/popcorn/aarch64/include adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o -rdynamic -o redis-server
+clang-3.7: warning: argument unused during compilation: '-nostdinc'
+clang-3.7: warning: argument unused during compilation: '-popcorn-migratable'
++ echo /usr/local/popcorn/bin/popcorn-ld: called with '-export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o redis-server -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o -L. -L/home/mohamed/libs/func_instrum/'
+/usr/local/popcorn/bin/popcorn-ld: called with -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o redis-server -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o -L. -L/home/mohamed/libs/func_instrum/
++ POPCORN=/usr/local/popcorn
++ LD=/usr/local/popcorn/bin/ld.gold
++ ALIGN='/usr/local/popcorn/bin/pyalign --compiler-inst /usr/local/popcorn'
++ POST_PROCESS=/usr/local/popcorn/bin/gen-stackinfo
++ X86_64_POPCORN=/usr/local/popcorn/x86_64
++ ARM64_POPCORN=/usr/local/popcorn/aarch64
++ CFLAGS=-nostdinc
++ LIBS='/lib/crt1.o /lib/libc.a /lib/libmigrate.a /lib/libstack-transform.a 
+	/lib/libelf.a  /lib/libpthread.a  /lib/libc.a  /lib/libm.a
+	/lib/liblua.a  /lib/libhiredis.a  /lib/libjemalloc.a  /lib/libm.a'
++ X86_64_LIBS=
++ ARM64_LIBS=
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/crt1.o '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/crt1.o '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libc.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libc.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libmigrate.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libmigrate.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libstack-transform.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libstack-transform.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libelf.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libelf.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libpthread.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libpthread.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libc.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libc.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libm.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libm.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/liblua.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/liblua.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libhiredis.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libhiredis.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libjemalloc.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libjemalloc.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libm.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libm.a '
++ options=()
++ eoo=0
++ OBJS=()
++ PRINT_VERSION=0
++ _USR_LIBRARY_PATH=()
++ _USR_LIBS=()
++ STANDARD_USR_LIBS=()
++ [[ -n -export-dynamic ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n --eh-frame-hdr ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -m ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n elf_x86_64 ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -dynamic-linker ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n /lib64/ld-linux-x86-64.so.2 ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -o ]]
++ (( eoo ))
++ case "$1" in
++ BIN=redis-server
++ echo found -o is: redis-server
+found -o is: redis-server
++ shift
++ shift
++ [[ -n -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/lib/x86_64-linux-gnu ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/lib/../lib64 ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib/x86_64-linux-gnu ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/lib ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n adlist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n quicklist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n ae.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n anet.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n dict.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n server.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n sds.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n zmalloc.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n lzf_c.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n lzf_d.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n pqsort.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n zipmap.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n sha1.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n ziplist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n release.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n networking.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n util.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n object.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n db.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n replication.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n rdb.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_string.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_list.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_set.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_zset.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_hash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n config.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n aof.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n pubsub.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n multi.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n debug.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n sort.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n intset.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n syncio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n cluster.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n crc16.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n endianconv.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n slowlog.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n scripting.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n bio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n rio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n rand.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n memtest.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n crc64.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n bitops.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n sentinel.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n notify.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n setproctitle.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n blocked.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n hyperloglog.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n latency.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n sparkline.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n redis-check-rdb.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n redis-check-aof.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n geo.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n lazyfree.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n module.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n evict.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n expire.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n geohash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n geohash_helper.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n childinfo.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n defrag.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n siphash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n rax.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_stream.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n listpack.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n localtime.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n lolwut.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n lolwut5.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n -L. ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/home/mohamed/libs/func_instrum/ ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n '' ]]
++ '[' 0 = 1 ']'
++ echo OPTIONS:
+OPTIONS:
++ echo OBJS: adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
+OBJS: adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
++ echo USER_LIBS:
+USER_LIBS:
++ echo STANDARD_USR_LIBS:
+STANDARD_USR_LIBS:
++ ALL_OBJS='adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o'
++ (( POPCORN_COMPILE_LINK ))
++ ARM64_OBJ='adlist_aarch64.o quicklist_aarch64.o ae_aarch64.o anet_aarch64.o dict_aarch64.o server_aarch64.o sds_aarch64.o zmalloc_aarch64.o lzf_c_aarch64.o lzf_d_aarch64.o pqsort_aarch64.o zipmap_aarch64.o sha1_aarch64.o ziplist_aarch64.o release_aarch64.o networking_aarch64.o util_aarch64.o object_aarch64.o db_aarch64.o replication_aarch64.o rdb_aarch64.o t_string_aarch64.o t_list_aarch64.o t_set_aarch64.o t_zset_aarch64.o t_hash_aarch64.o config_aarch64.o aof_aarch64.o pubsub_aarch64.o multi_aarch64.o debug_aarch64.o sort_aarch64.o intset_aarch64.o syncio_aarch64.o cluster_aarch64.o crc16_aarch64.o endianconv_aarch64.o slowlog_aarch64.o scripting_aarch64.o bio_aarch64.o rio_aarch64.o rand_aarch64.o memtest_aarch64.o crc64_aarch64.o bitops_aarch64.o sentinel_aarch64.o notify_aarch64.o setproctitle_aarch64.o blocked_aarch64.o hyperloglog_aarch64.o latency_aarch64.o sparkline_aarch64.o redis-check-rdb_aarch64.o redis-check-aof_aarch64.o geo_aarch64.o lazyfree_aarch64.o module_aarch64.o evict_aarch64.o expire_aarch64.o geohash_aarch64.o geohash_helper_aarch64.o childinfo_aarch64.o defrag_aarch64.o siphash_aarch64.o rax_aarch64.o t_stream_aarch64.o listpack_aarch64.o localtime_aarch64.o lolwut_aarch64.o lolwut5_aarch64.o'
++ X86_64_OBJ='adlist_x86_64.o quicklist_x86_64.o ae_x86_64.o anet_x86_64.o dict_x86_64.o server_x86_64.o sds_x86_64.o zmalloc_x86_64.o lzf_c_x86_64.o lzf_d_x86_64.o pqsort_x86_64.o zipmap_x86_64.o sha1_x86_64.o ziplist_x86_64.o release_x86_64.o networking_x86_64.o util_x86_64.o object_x86_64.o db_x86_64.o replication_x86_64.o rdb_x86_64.o t_string_x86_64.o t_list_x86_64.o t_set_x86_64.o t_zset_x86_64.o t_hash_x86_64.o config_x86_64.o aof_x86_64.o pubsub_x86_64.o multi_x86_64.o debug_x86_64.o sort_x86_64.o intset_x86_64.o syncio_x86_64.o cluster_x86_64.o crc16_x86_64.o endianconv_x86_64.o slowlog_x86_64.o scripting_x86_64.o bio_x86_64.o rio_x86_64.o rand_x86_64.o memtest_x86_64.o crc64_x86_64.o bitops_x86_64.o sentinel_x86_64.o notify_x86_64.o setproctitle_x86_64.o blocked_x86_64.o hyperloglog_x86_64.o latency_x86_64.o sparkline_x86_64.o redis-check-rdb_x86_64.o redis-check-aof_x86_64.o geo_x86_64.o lazyfree_x86_64.o module_x86_64.o evict_x86_64.o expire_x86_64.o geohash_x86_64.o geohash_helper_x86_64.o childinfo_x86_64.o defrag_x86_64.o siphash_x86_64.o rax_x86_64.o t_stream_x86_64.o listpack_x86_64.o localtime_x86_64.o lolwut_x86_64.o lolwut5_x86_64.o'
++ USR_LIBRARY_PATH='-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/'
++ USR_LIBS=
++ USR_LIBS_ARM64=' '
++ '[' -z '' ']'
++ _USR_LIBS_x86_64=
++ USR_LIBS_x86_64=' '
++ ALL_LIBS_ARM='--start-group   -lc -lgcc -lgcc_eh --end-group'
++++ aarch64-linux-gnu-gcc -print-libgcc-file-name
+++ dirname /usr/lib/gcc-cross/aarch64-linux-gnu/5/libgcc.a
++ ARM64_LIBGCC=/usr/lib/gcc-cross/aarch64-linux-gnu/5
++ LDFLAGS='-z noexecstack -z relro --hash-style=gnu --build-id -static'
++ X86_64_LDFLAGS='-z noexecstack -z relro --hash-style=gnu --build-id -static -m elf_x86_64 -L/usr/local/popcorn/x86_64/lib /usr/local/popcorn/x86_64//lib/crt1.o /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libmigrate.a /usr/local/popcorn/x86_64//lib/libstack-transform.a /usr/local/popcorn/x86_64//lib/libelf.a /usr/local/popcorn/x86_64//lib/libpthread.a /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libm.a /usr/local/popcorn/x86_64//lib/liblua.a /usr/local/popcorn/x86_64//lib/libhiredis.a /usr/local/popcorn/x86_64//lib/libjemalloc.a /usr/local/popcorn/x86_64//lib/libm.a  -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc   --end-group'
++ ARM64_LDFLAGS='-z noexecstack -z relro --hash-style=gnu --build-id -static -m aarch64linux -L/usr/local/popcorn/aarch64/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/5 /usr/local/popcorn/aarch64//lib/crt1.o /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libmigrate.a /usr/local/popcorn/aarch64//lib/libstack-transform.a /usr/local/popcorn/aarch64//lib/libelf.a /usr/local/popcorn/aarch64//lib/libpthread.a /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libm.a /usr/local/popcorn/aarch64//lib/liblua.a /usr/local/popcorn/aarch64//lib/libhiredis.a /usr/local/popcorn/aarch64//lib/libjemalloc.a /usr/local/popcorn/aarch64//lib/libm.a  -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group   -lc -lgcc -lgcc_eh --end-group'
++ BIN_X86=redis-server_x86-64
++ BIN_ARM=redis-server_aarch64
++ BIN_X86_VANILLA=redis-server_x86-64_VANILLA
++ BIN_ARM_VANILLA=redis-server_aarch64_VANILLA
++ ARM64_MAP=arm64_map.txt
++ X86_64_MAP=x86_64_map.txt
++ /usr/local/popcorn/bin/ld.gold -o redis-server_aarch64_VANILLA adlist_aarch64.o quicklist_aarch64.o ae_aarch64.o anet_aarch64.o dict_aarch64.o server_aarch64.o sds_aarch64.o zmalloc_aarch64.o lzf_c_aarch64.o lzf_d_aarch64.o pqsort_aarch64.o zipmap_aarch64.o sha1_aarch64.o ziplist_aarch64.o release_aarch64.o networking_aarch64.o util_aarch64.o object_aarch64.o db_aarch64.o replication_aarch64.o rdb_aarch64.o t_string_aarch64.o t_list_aarch64.o t_set_aarch64.o t_zset_aarch64.o t_hash_aarch64.o config_aarch64.o aof_aarch64.o pubsub_aarch64.o multi_aarch64.o debug_aarch64.o sort_aarch64.o intset_aarch64.o syncio_aarch64.o cluster_aarch64.o crc16_aarch64.o endianconv_aarch64.o slowlog_aarch64.o scripting_aarch64.o bio_aarch64.o rio_aarch64.o rand_aarch64.o memtest_aarch64.o crc64_aarch64.o bitops_aarch64.o sentinel_aarch64.o notify_aarch64.o setproctitle_aarch64.o blocked_aarch64.o hyperloglog_aarch64.o latency_aarch64.o sparkline_aarch64.o redis-check-rdb_aarch64.o redis-check-aof_aarch64.o geo_aarch64.o lazyfree_aarch64.o module_aarch64.o evict_aarch64.o expire_aarch64.o geohash_aarch64.o geohash_helper_aarch64.o childinfo_aarch64.o defrag_aarch64.o siphash_aarch64.o rax_aarch64.o t_stream_aarch64.o listpack_aarch64.o localtime_aarch64.o lolwut_aarch64.o lolwut5_aarch64.o -z noexecstack -z relro --hash-style=gnu --build-id -static -m aarch64linux -L/usr/local/popcorn/aarch64/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/5 /usr/local/popcorn/aarch64//lib/crt1.o /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libmigrate.a /usr/local/popcorn/aarch64//lib/libstack-transform.a /usr/local/popcorn/aarch64//lib/libelf.a /usr/local/popcorn/aarch64//lib/libpthread.a /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libm.a /usr/local/popcorn/aarch64//lib/liblua.a /usr/local/popcorn/aarch64//lib/libhiredis.a /usr/local/popcorn/aarch64//lib/libjemalloc.a /usr/local/popcorn/aarch64//lib/libm.a -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc -lgcc -lgcc_eh --end-group -Map arm64_map.txt -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2
++ /usr/local/popcorn/bin/ld.gold -o redis-server_x86-64_VANILLA adlist_x86_64.o quicklist_x86_64.o ae_x86_64.o anet_x86_64.o dict_x86_64.o server_x86_64.o sds_x86_64.o zmalloc_x86_64.o lzf_c_x86_64.o lzf_d_x86_64.o pqsort_x86_64.o zipmap_x86_64.o sha1_x86_64.o ziplist_x86_64.o release_x86_64.o networking_x86_64.o util_x86_64.o object_x86_64.o db_x86_64.o replication_x86_64.o rdb_x86_64.o t_string_x86_64.o t_list_x86_64.o t_set_x86_64.o t_zset_x86_64.o t_hash_x86_64.o config_x86_64.o aof_x86_64.o pubsub_x86_64.o multi_x86_64.o debug_x86_64.o sort_x86_64.o intset_x86_64.o syncio_x86_64.o cluster_x86_64.o crc16_x86_64.o endianconv_x86_64.o slowlog_x86_64.o scripting_x86_64.o bio_x86_64.o rio_x86_64.o rand_x86_64.o memtest_x86_64.o crc64_x86_64.o bitops_x86_64.o sentinel_x86_64.o notify_x86_64.o setproctitle_x86_64.o blocked_x86_64.o hyperloglog_x86_64.o latency_x86_64.o sparkline_x86_64.o redis-check-rdb_x86_64.o redis-check-aof_x86_64.o geo_x86_64.o lazyfree_x86_64.o module_x86_64.o evict_x86_64.o expire_x86_64.o geohash_x86_64.o geohash_helper_x86_64.o childinfo_x86_64.o defrag_x86_64.o siphash_x86_64.o rax_x86_64.o t_stream_x86_64.o listpack_x86_64.o localtime_x86_64.o lolwut_x86_64.o lolwut5_x86_64.o -z noexecstack -z relro --hash-style=gnu --build-id -static -m elf_x86_64 -L/usr/local/popcorn/x86_64/lib /usr/local/popcorn/x86_64//lib/crt1.o /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libmigrate.a /usr/local/popcorn/x86_64//lib/libstack-transform.a /usr/local/popcorn/x86_64//lib/libelf.a /usr/local/popcorn/x86_64//lib/libpthread.a /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libm.a /usr/local/popcorn/x86_64//lib/liblua.a /usr/local/popcorn/x86_64//lib/libhiredis.a /usr/local/popcorn/x86_64//lib/libjemalloc.a /usr/local/popcorn/x86_64//lib/libm.a -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc --end-group -Map x86_64_map.txt -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2
++ ARM64_LD_SCRIPT=redis-server_arm_ldscript
++ X86_64_LD_SCRIPT=redis-server_x86_ldscript
++ /usr/local/popcorn/bin/pyalign --compiler-inst /usr/local/popcorn --x86-bin redis-server_x86-64_VANILLA --arm-bin redis-server_aarch64_VANILLA --x86-map x86_64_map.txt --arm-map arm64_map.txt --output-x86-ls redis-server_x86_ldscript --output-arm-ls redis-server_arm_ldscript
++ ARM64_ALIGNED_MAP=arm64_aligned_map.txt
++ X86_64_ALIGNED_MAP=x86_64_aligned_map.txt
++ /usr/local/popcorn/bin/ld.gold -o redis-server_aarch64 adlist_aarch64.o quicklist_aarch64.o ae_aarch64.o anet_aarch64.o dict_aarch64.o server_aarch64.o sds_aarch64.o zmalloc_aarch64.o lzf_c_aarch64.o lzf_d_aarch64.o pqsort_aarch64.o zipmap_aarch64.o sha1_aarch64.o ziplist_aarch64.o release_aarch64.o networking_aarch64.o util_aarch64.o object_aarch64.o db_aarch64.o replication_aarch64.o rdb_aarch64.o t_string_aarch64.o t_list_aarch64.o t_set_aarch64.o t_zset_aarch64.o t_hash_aarch64.o config_aarch64.o aof_aarch64.o pubsub_aarch64.o multi_aarch64.o debug_aarch64.o sort_aarch64.o intset_aarch64.o syncio_aarch64.o cluster_aarch64.o crc16_aarch64.o endianconv_aarch64.o slowlog_aarch64.o scripting_aarch64.o bio_aarch64.o rio_aarch64.o rand_aarch64.o memtest_aarch64.o crc64_aarch64.o bitops_aarch64.o sentinel_aarch64.o notify_aarch64.o setproctitle_aarch64.o blocked_aarch64.o hyperloglog_aarch64.o latency_aarch64.o sparkline_aarch64.o redis-check-rdb_aarch64.o redis-check-aof_aarch64.o geo_aarch64.o lazyfree_aarch64.o module_aarch64.o evict_aarch64.o expire_aarch64.o geohash_aarch64.o geohash_helper_aarch64.o childinfo_aarch64.o defrag_aarch64.o siphash_aarch64.o rax_aarch64.o t_stream_aarch64.o listpack_aarch64.o localtime_aarch64.o lolwut_aarch64.o lolwut5_aarch64.o -z noexecstack -z relro --hash-style=gnu --build-id -static -m aarch64linux -L/usr/local/popcorn/aarch64/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/5 /usr/local/popcorn/aarch64//lib/crt1.o /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libmigrate.a /usr/local/popcorn/aarch64//lib/libstack-transform.a /usr/local/popcorn/aarch64//lib/libelf.a /usr/local/popcorn/aarch64//lib/libpthread.a /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libm.a /usr/local/popcorn/aarch64//lib/liblua.a /usr/local/popcorn/aarch64//lib/libhiredis.a /usr/local/popcorn/aarch64//lib/libjemalloc.a /usr/local/popcorn/aarch64//lib/libm.a -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc -lgcc -lgcc_eh --end-group --cref -Map arm64_aligned_map.txt -T redis-server_arm_ldscript -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2
++ /usr/local/popcorn/bin/ld.gold -o redis-server_x86-64 adlist_x86_64.o quicklist_x86_64.o ae_x86_64.o anet_x86_64.o dict_x86_64.o server_x86_64.o sds_x86_64.o zmalloc_x86_64.o lzf_c_x86_64.o lzf_d_x86_64.o pqsort_x86_64.o zipmap_x86_64.o sha1_x86_64.o ziplist_x86_64.o release_x86_64.o networking_x86_64.o util_x86_64.o object_x86_64.o db_x86_64.o replication_x86_64.o rdb_x86_64.o t_string_x86_64.o t_list_x86_64.o t_set_x86_64.o t_zset_x86_64.o t_hash_x86_64.o config_x86_64.o aof_x86_64.o pubsub_x86_64.o multi_x86_64.o debug_x86_64.o sort_x86_64.o intset_x86_64.o syncio_x86_64.o cluster_x86_64.o crc16_x86_64.o endianconv_x86_64.o slowlog_x86_64.o scripting_x86_64.o bio_x86_64.o rio_x86_64.o rand_x86_64.o memtest_x86_64.o crc64_x86_64.o bitops_x86_64.o sentinel_x86_64.o notify_x86_64.o setproctitle_x86_64.o blocked_x86_64.o hyperloglog_x86_64.o latency_x86_64.o sparkline_x86_64.o redis-check-rdb_x86_64.o redis-check-aof_x86_64.o geo_x86_64.o lazyfree_x86_64.o module_x86_64.o evict_x86_64.o expire_x86_64.o geohash_x86_64.o geohash_helper_x86_64.o childinfo_x86_64.o defrag_x86_64.o siphash_x86_64.o rax_x86_64.o t_stream_x86_64.o listpack_x86_64.o localtime_x86_64.o lolwut_x86_64.o lolwut5_x86_64.o -z noexecstack -z relro --hash-style=gnu --build-id -static -m elf_x86_64 -L/usr/local/popcorn/x86_64/lib /usr/local/popcorn/x86_64//lib/crt1.o /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libmigrate.a /usr/local/popcorn/x86_64//lib/libstack-transform.a /usr/local/popcorn/x86_64//lib/libelf.a /usr/local/popcorn/x86_64//lib/libpthread.a /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libm.a /usr/local/popcorn/x86_64//lib/liblua.a /usr/local/popcorn/x86_64//lib/libhiredis.a /usr/local/popcorn/x86_64//lib/libjemalloc.a /usr/local/popcorn/x86_64//lib/libm.a -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc --end-group --cref -Map x86_64_aligned_map.txt -T redis-server_x86_ldscript -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2
++ /usr/local/popcorn/bin/gen-stackinfo -f redis-server_aarch64
++ /usr/local/popcorn/bin/gen-stackinfo -f redis-server_x86-64
++ cp redis-server_x86-64 redis-server
++ touch redis-server
+    [34;1mLINK[0m [37;1mredis-server[0m
++ echo '/usr/local/popcorn/bin/popcorn-link: called with -rdynamic -o redis-server adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o'
+/usr/local/popcorn/bin/popcorn-link: called with -rdynamic -o redis-server adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
++ export POPCORN_COMPILATION_SCRIPTS=1
++ POPCORN_COMPILATION_SCRIPTS=1
++ POPCORN=/usr/local/popcorn
++ ARM64_POPCORN=/usr/local/popcorn/aarch64
++ CC=/usr/local/popcorn/bin/clang
++ HET_CFLAGS='-nostdinc -nostdlib -popcorn-migratable -fno-common -ftls-model=initial-exec'
++ ARM64_INC='-isystem /usr/local/popcorn/aarch64/include'
++ options=()
++ eoo=0
++ COMPILE_ONLY=0
++ LINK_ONLY=0
++ OBJS=()
++ [[ -n -rdynamic ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -o ]]
++ (( eoo ))
++ case "$1" in
++ BIN=redis-server
++ shift
++ shift
++ [[ -n adlist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n quicklist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n ae.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n anet.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n dict.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n server.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n sds.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n zmalloc.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n lzf_c.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n lzf_d.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n pqsort.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n zipmap.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n sha1.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n ziplist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n release.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n networking.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n util.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n object.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n db.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n replication.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n rdb.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_string.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_list.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_set.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_zset.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_hash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n config.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n aof.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n pubsub.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n multi.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n debug.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n sort.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n intset.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n syncio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n cluster.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n crc16.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n endianconv.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n slowlog.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n scripting.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n bio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n rio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n rand.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n memtest.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n crc64.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n bitops.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n sentinel.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n notify.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n setproctitle.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n blocked.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n hyperloglog.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n latency.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n sparkline.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n redis-check-rdb.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n redis-check-aof.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n geo.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n lazyfree.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n module.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n evict.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n expire.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n geohash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n geohash_helper.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n childinfo.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n defrag.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n siphash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n rax.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n t_stream.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n listpack.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n localtime.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n lolwut.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n lolwut5.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n '' ]]
++ ALL_OBJS='adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o'
++ echo obj: otab adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
+obj: otab adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
++ echo OBJS: adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
+OBJS: adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
++ (( COMPILE_ONLY ))
++ SUFF_OBJS='adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o'
++ (( LINK_ONLY ))
++ echo obj: tab adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
+obj: tab adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
++ echo opt: -rdynamic
+opt: -rdynamic
++ '[' -z redis-server ']'
++ /usr/local/popcorn/bin/clang -nostdinc -nostdlib -popcorn-migratable -fno-common -ftls-model=initial-exec -isystem /usr/local/popcorn/aarch64/include adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o -rdynamic -o redis-server
+clang-3.7: warning: argument unused during compilation: '-nostdinc'
+clang-3.7: warning: argument unused during compilation: '-popcorn-migratable'
++ echo /usr/local/popcorn/bin/popcorn-ld: called with '-export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o redis-server -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o -L. -L/home/mohamed/libs/func_instrum/'
+/usr/local/popcorn/bin/popcorn-ld: called with -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o redis-server -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o -L. -L/home/mohamed/libs/func_instrum/
++ POPCORN=/usr/local/popcorn
++ LD=/usr/local/popcorn/bin/ld.gold
++ ALIGN='/usr/local/popcorn/bin/pyalign --compiler-inst /usr/local/popcorn'
++ POST_PROCESS=/usr/local/popcorn/bin/gen-stackinfo
++ X86_64_POPCORN=/usr/local/popcorn/x86_64
++ ARM64_POPCORN=/usr/local/popcorn/aarch64
++ CFLAGS=-nostdinc
++ LIBS='/lib/crt1.o /lib/libc.a /lib/libmigrate.a /lib/libstack-transform.a 
+	/lib/libelf.a  /lib/libpthread.a  /lib/libc.a  /lib/libm.a
+	/lib/liblua.a  /lib/libhiredis.a  /lib/libjemalloc.a  /lib/libm.a'
++ X86_64_LIBS=
++ ARM64_LIBS=
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/crt1.o '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/crt1.o '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libc.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libc.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libmigrate.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libmigrate.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libstack-transform.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libstack-transform.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libelf.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libelf.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libpthread.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libpthread.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libc.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libc.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libm.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libm.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/liblua.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/liblua.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libhiredis.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libhiredis.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libjemalloc.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libjemalloc.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libm.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libm.a '
++ options=()
++ eoo=0
++ OBJS=()
++ PRINT_VERSION=0
++ _USR_LIBRARY_PATH=()
++ _USR_LIBS=()
++ STANDARD_USR_LIBS=()
++ [[ -n -export-dynamic ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n --eh-frame-hdr ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -m ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n elf_x86_64 ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -dynamic-linker ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n /lib64/ld-linux-x86-64.so.2 ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -o ]]
++ (( eoo ))
++ case "$1" in
++ BIN=redis-server
++ echo found -o is: redis-server
+found -o is: redis-server
++ shift
++ shift
++ [[ -n -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/lib/x86_64-linux-gnu ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/lib/../lib64 ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib/x86_64-linux-gnu ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/lib ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n adlist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n quicklist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n ae.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n anet.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n dict.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n server.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n sds.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n zmalloc.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n lzf_c.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n lzf_d.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n pqsort.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n zipmap.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n sha1.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n ziplist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n release.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n networking.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n util.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n object.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n db.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n replication.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n rdb.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_string.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_list.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_set.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_zset.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_hash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n config.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n aof.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n pubsub.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n multi.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n debug.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n sort.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n intset.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n syncio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n cluster.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n crc16.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n endianconv.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n slowlog.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n scripting.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n bio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n rio.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n rand.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n memtest.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n crc64.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n bitops.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n sentinel.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n notify.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n setproctitle.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n blocked.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n hyperloglog.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n latency.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n sparkline.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n redis-check-rdb.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n redis-check-aof.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n geo.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n lazyfree.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n module.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n evict.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n expire.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n geohash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n geohash_helper.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n childinfo.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n defrag.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n siphash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n rax.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n t_stream.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n listpack.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n localtime.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n lolwut.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n lolwut5.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n -L. ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/home/mohamed/libs/func_instrum/ ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n '' ]]
++ '[' 0 = 1 ']'
++ echo OPTIONS:
+OPTIONS:
++ echo OBJS: adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
+OBJS: adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o
++ echo USER_LIBS:
+USER_LIBS:
++ echo STANDARD_USR_LIBS:
+STANDARD_USR_LIBS:
++ ALL_OBJS='adlist.o quicklist.o ae.o anet.o dict.o server.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o latency.o sparkline.o redis-check-rdb.o redis-check-aof.o geo.o lazyfree.o module.o evict.o expire.o geohash.o geohash_helper.o childinfo.o defrag.o siphash.o rax.o t_stream.o listpack.o localtime.o lolwut.o lolwut5.o'
++ (( POPCORN_COMPILE_LINK ))
++ ARM64_OBJ='adlist_aarch64.o quicklist_aarch64.o ae_aarch64.o anet_aarch64.o dict_aarch64.o server_aarch64.o sds_aarch64.o zmalloc_aarch64.o lzf_c_aarch64.o lzf_d_aarch64.o pqsort_aarch64.o zipmap_aarch64.o sha1_aarch64.o ziplist_aarch64.o release_aarch64.o networking_aarch64.o util_aarch64.o object_aarch64.o db_aarch64.o replication_aarch64.o rdb_aarch64.o t_string_aarch64.o t_list_aarch64.o t_set_aarch64.o t_zset_aarch64.o t_hash_aarch64.o config_aarch64.o aof_aarch64.o pubsub_aarch64.o multi_aarch64.o debug_aarch64.o sort_aarch64.o intset_aarch64.o syncio_aarch64.o cluster_aarch64.o crc16_aarch64.o endianconv_aarch64.o slowlog_aarch64.o scripting_aarch64.o bio_aarch64.o rio_aarch64.o rand_aarch64.o memtest_aarch64.o crc64_aarch64.o bitops_aarch64.o sentinel_aarch64.o notify_aarch64.o setproctitle_aarch64.o blocked_aarch64.o hyperloglog_aarch64.o latency_aarch64.o sparkline_aarch64.o redis-check-rdb_aarch64.o redis-check-aof_aarch64.o geo_aarch64.o lazyfree_aarch64.o module_aarch64.o evict_aarch64.o expire_aarch64.o geohash_aarch64.o geohash_helper_aarch64.o childinfo_aarch64.o defrag_aarch64.o siphash_aarch64.o rax_aarch64.o t_stream_aarch64.o listpack_aarch64.o localtime_aarch64.o lolwut_aarch64.o lolwut5_aarch64.o'
++ X86_64_OBJ='adlist_x86_64.o quicklist_x86_64.o ae_x86_64.o anet_x86_64.o dict_x86_64.o server_x86_64.o sds_x86_64.o zmalloc_x86_64.o lzf_c_x86_64.o lzf_d_x86_64.o pqsort_x86_64.o zipmap_x86_64.o sha1_x86_64.o ziplist_x86_64.o release_x86_64.o networking_x86_64.o util_x86_64.o object_x86_64.o db_x86_64.o replication_x86_64.o rdb_x86_64.o t_string_x86_64.o t_list_x86_64.o t_set_x86_64.o t_zset_x86_64.o t_hash_x86_64.o config_x86_64.o aof_x86_64.o pubsub_x86_64.o multi_x86_64.o debug_x86_64.o sort_x86_64.o intset_x86_64.o syncio_x86_64.o cluster_x86_64.o crc16_x86_64.o endianconv_x86_64.o slowlog_x86_64.o scripting_x86_64.o bio_x86_64.o rio_x86_64.o rand_x86_64.o memtest_x86_64.o crc64_x86_64.o bitops_x86_64.o sentinel_x86_64.o notify_x86_64.o setproctitle_x86_64.o blocked_x86_64.o hyperloglog_x86_64.o latency_x86_64.o sparkline_x86_64.o redis-check-rdb_x86_64.o redis-check-aof_x86_64.o geo_x86_64.o lazyfree_x86_64.o module_x86_64.o evict_x86_64.o expire_x86_64.o geohash_x86_64.o geohash_helper_x86_64.o childinfo_x86_64.o defrag_x86_64.o siphash_x86_64.o rax_x86_64.o t_stream_x86_64.o listpack_x86_64.o localtime_x86_64.o lolwut_x86_64.o lolwut5_x86_64.o'
++ USR_LIBRARY_PATH='-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/'
++ USR_LIBS=
++ USR_LIBS_ARM64=' '
++ '[' -z '' ']'
++ _USR_LIBS_x86_64=
++ USR_LIBS_x86_64=' '
++ ALL_LIBS_ARM='--start-group   -lc -lgcc -lgcc_eh --end-group'
++++ aarch64-linux-gnu-gcc -print-libgcc-file-name
+++ dirname /usr/lib/gcc-cross/aarch64-linux-gnu/5/libgcc.a
++ ARM64_LIBGCC=/usr/lib/gcc-cross/aarch64-linux-gnu/5
++ LDFLAGS='-z noexecstack -z relro --hash-style=gnu --build-id -static'
++ X86_64_LDFLAGS='-z noexecstack -z relro --hash-style=gnu --build-id -static -m elf_x86_64 -L/usr/local/popcorn/x86_64/lib /usr/local/popcorn/x86_64//lib/crt1.o /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libmigrate.a /usr/local/popcorn/x86_64//lib/libstack-transform.a /usr/local/popcorn/x86_64//lib/libelf.a /usr/local/popcorn/x86_64//lib/libpthread.a /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libm.a /usr/local/popcorn/x86_64//lib/liblua.a /usr/local/popcorn/x86_64//lib/libhiredis.a /usr/local/popcorn/x86_64//lib/libjemalloc.a /usr/local/popcorn/x86_64//lib/libm.a  -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc   --end-group'
++ ARM64_LDFLAGS='-z noexecstack -z relro --hash-style=gnu --build-id -static -m aarch64linux -L/usr/local/popcorn/aarch64/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/5 /usr/local/popcorn/aarch64//lib/crt1.o /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libmigrate.a /usr/local/popcorn/aarch64//lib/libstack-transform.a /usr/local/popcorn/aarch64//lib/libelf.a /usr/local/popcorn/aarch64//lib/libpthread.a /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libm.a /usr/local/popcorn/aarch64//lib/liblua.a /usr/local/popcorn/aarch64//lib/libhiredis.a /usr/local/popcorn/aarch64//lib/libjemalloc.a /usr/local/popcorn/aarch64//lib/libm.a  -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group   -lc -lgcc -lgcc_eh --end-group'
++ BIN_X86=redis-server_x86-64
++ BIN_ARM=redis-server_aarch64
++ BIN_X86_VANILLA=redis-server_x86-64_VANILLA
++ BIN_ARM_VANILLA=redis-server_aarch64_VANILLA
++ ARM64_MAP=arm64_map.txt
++ X86_64_MAP=x86_64_map.txt
++ /usr/local/popcorn/bin/ld.gold -o redis-server_aarch64_VANILLA adlist_aarch64.o quicklist_aarch64.o ae_aarch64.o anet_aarch64.o dict_aarch64.o server_aarch64.o sds_aarch64.o zmalloc_aarch64.o lzf_c_aarch64.o lzf_d_aarch64.o pqsort_aarch64.o zipmap_aarch64.o sha1_aarch64.o ziplist_aarch64.o release_aarch64.o networking_aarch64.o util_aarch64.o object_aarch64.o db_aarch64.o replication_aarch64.o rdb_aarch64.o t_string_aarch64.o t_list_aarch64.o t_set_aarch64.o t_zset_aarch64.o t_hash_aarch64.o config_aarch64.o aof_aarch64.o pubsub_aarch64.o multi_aarch64.o debug_aarch64.o sort_aarch64.o intset_aarch64.o syncio_aarch64.o cluster_aarch64.o crc16_aarch64.o endianconv_aarch64.o slowlog_aarch64.o scripting_aarch64.o bio_aarch64.o rio_aarch64.o rand_aarch64.o memtest_aarch64.o crc64_aarch64.o bitops_aarch64.o sentinel_aarch64.o notify_aarch64.o setproctitle_aarch64.o blocked_aarch64.o hyperloglog_aarch64.o latency_aarch64.o sparkline_aarch64.o redis-check-rdb_aarch64.o redis-check-aof_aarch64.o geo_aarch64.o lazyfree_aarch64.o module_aarch64.o evict_aarch64.o expire_aarch64.o geohash_aarch64.o geohash_helper_aarch64.o childinfo_aarch64.o defrag_aarch64.o siphash_aarch64.o rax_aarch64.o t_stream_aarch64.o listpack_aarch64.o localtime_aarch64.o lolwut_aarch64.o lolwut5_aarch64.o -z noexecstack -z relro --hash-style=gnu --build-id -static -m aarch64linux -L/usr/local/popcorn/aarch64/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/5 /usr/local/popcorn/aarch64//lib/crt1.o /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libmigrate.a /usr/local/popcorn/aarch64//lib/libstack-transform.a /usr/local/popcorn/aarch64//lib/libelf.a /usr/local/popcorn/aarch64//lib/libpthread.a /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libm.a /usr/local/popcorn/aarch64//lib/liblua.a /usr/local/popcorn/aarch64//lib/libhiredis.a /usr/local/popcorn/aarch64//lib/libjemalloc.a /usr/local/popcorn/aarch64//lib/libm.a -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc -lgcc -lgcc_eh --end-group -Map arm64_map.txt -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2
++ /usr/local/popcorn/bin/ld.gold -o redis-server_x86-64_VANILLA adlist_x86_64.o quicklist_x86_64.o ae_x86_64.o anet_x86_64.o dict_x86_64.o server_x86_64.o sds_x86_64.o zmalloc_x86_64.o lzf_c_x86_64.o lzf_d_x86_64.o pqsort_x86_64.o zipmap_x86_64.o sha1_x86_64.o ziplist_x86_64.o release_x86_64.o networking_x86_64.o util_x86_64.o object_x86_64.o db_x86_64.o replication_x86_64.o rdb_x86_64.o t_string_x86_64.o t_list_x86_64.o t_set_x86_64.o t_zset_x86_64.o t_hash_x86_64.o config_x86_64.o aof_x86_64.o pubsub_x86_64.o multi_x86_64.o debug_x86_64.o sort_x86_64.o intset_x86_64.o syncio_x86_64.o cluster_x86_64.o crc16_x86_64.o endianconv_x86_64.o slowlog_x86_64.o scripting_x86_64.o bio_x86_64.o rio_x86_64.o rand_x86_64.o memtest_x86_64.o crc64_x86_64.o bitops_x86_64.o sentinel_x86_64.o notify_x86_64.o setproctitle_x86_64.o blocked_x86_64.o hyperloglog_x86_64.o latency_x86_64.o sparkline_x86_64.o redis-check-rdb_x86_64.o redis-check-aof_x86_64.o geo_x86_64.o lazyfree_x86_64.o module_x86_64.o evict_x86_64.o expire_x86_64.o geohash_x86_64.o geohash_helper_x86_64.o childinfo_x86_64.o defrag_x86_64.o siphash_x86_64.o rax_x86_64.o t_stream_x86_64.o listpack_x86_64.o localtime_x86_64.o lolwut_x86_64.o lolwut5_x86_64.o -z noexecstack -z relro --hash-style=gnu --build-id -static -m elf_x86_64 -L/usr/local/popcorn/x86_64/lib /usr/local/popcorn/x86_64//lib/crt1.o /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libmigrate.a /usr/local/popcorn/x86_64//lib/libstack-transform.a /usr/local/popcorn/x86_64//lib/libelf.a /usr/local/popcorn/x86_64//lib/libpthread.a /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libm.a /usr/local/popcorn/x86_64//lib/liblua.a /usr/local/popcorn/x86_64//lib/libhiredis.a /usr/local/popcorn/x86_64//lib/libjemalloc.a /usr/local/popcorn/x86_64//lib/libm.a -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc --end-group -Map x86_64_map.txt -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2
++ ARM64_LD_SCRIPT=redis-server_arm_ldscript
++ X86_64_LD_SCRIPT=redis-server_x86_ldscript
++ /usr/local/popcorn/bin/pyalign --compiler-inst /usr/local/popcorn --x86-bin redis-server_x86-64_VANILLA --arm-bin redis-server_aarch64_VANILLA --x86-map x86_64_map.txt --arm-map arm64_map.txt --output-x86-ls redis-server_x86_ldscript --output-arm-ls redis-server_arm_ldscript
++ ARM64_ALIGNED_MAP=arm64_aligned_map.txt
++ X86_64_ALIGNED_MAP=x86_64_aligned_map.txt
++ /usr/local/popcorn/bin/ld.gold -o redis-server_aarch64 adlist_aarch64.o quicklist_aarch64.o ae_aarch64.o anet_aarch64.o dict_aarch64.o server_aarch64.o sds_aarch64.o zmalloc_aarch64.o lzf_c_aarch64.o lzf_d_aarch64.o pqsort_aarch64.o zipmap_aarch64.o sha1_aarch64.o ziplist_aarch64.o release_aarch64.o networking_aarch64.o util_aarch64.o object_aarch64.o db_aarch64.o replication_aarch64.o rdb_aarch64.o t_string_aarch64.o t_list_aarch64.o t_set_aarch64.o t_zset_aarch64.o t_hash_aarch64.o config_aarch64.o aof_aarch64.o pubsub_aarch64.o multi_aarch64.o debug_aarch64.o sort_aarch64.o intset_aarch64.o syncio_aarch64.o cluster_aarch64.o crc16_aarch64.o endianconv_aarch64.o slowlog_aarch64.o scripting_aarch64.o bio_aarch64.o rio_aarch64.o rand_aarch64.o memtest_aarch64.o crc64_aarch64.o bitops_aarch64.o sentinel_aarch64.o notify_aarch64.o setproctitle_aarch64.o blocked_aarch64.o hyperloglog_aarch64.o latency_aarch64.o sparkline_aarch64.o redis-check-rdb_aarch64.o redis-check-aof_aarch64.o geo_aarch64.o lazyfree_aarch64.o module_aarch64.o evict_aarch64.o expire_aarch64.o geohash_aarch64.o geohash_helper_aarch64.o childinfo_aarch64.o defrag_aarch64.o siphash_aarch64.o rax_aarch64.o t_stream_aarch64.o listpack_aarch64.o localtime_aarch64.o lolwut_aarch64.o lolwut5_aarch64.o -z noexecstack -z relro --hash-style=gnu --build-id -static -m aarch64linux -L/usr/local/popcorn/aarch64/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/5 /usr/local/popcorn/aarch64//lib/crt1.o /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libmigrate.a /usr/local/popcorn/aarch64//lib/libstack-transform.a /usr/local/popcorn/aarch64//lib/libelf.a /usr/local/popcorn/aarch64//lib/libpthread.a /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libm.a /usr/local/popcorn/aarch64//lib/liblua.a /usr/local/popcorn/aarch64//lib/libhiredis.a /usr/local/popcorn/aarch64//lib/libjemalloc.a /usr/local/popcorn/aarch64//lib/libm.a -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc -lgcc -lgcc_eh --end-group --cref -Map arm64_aligned_map.txt -T redis-server_arm_ldscript -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2
++ /usr/local/popcorn/bin/ld.gold -o redis-server_x86-64 adlist_x86_64.o quicklist_x86_64.o ae_x86_64.o anet_x86_64.o dict_x86_64.o server_x86_64.o sds_x86_64.o zmalloc_x86_64.o lzf_c_x86_64.o lzf_d_x86_64.o pqsort_x86_64.o zipmap_x86_64.o sha1_x86_64.o ziplist_x86_64.o release_x86_64.o networking_x86_64.o util_x86_64.o object_x86_64.o db_x86_64.o replication_x86_64.o rdb_x86_64.o t_string_x86_64.o t_list_x86_64.o t_set_x86_64.o t_zset_x86_64.o t_hash_x86_64.o config_x86_64.o aof_x86_64.o pubsub_x86_64.o multi_x86_64.o debug_x86_64.o sort_x86_64.o intset_x86_64.o syncio_x86_64.o cluster_x86_64.o crc16_x86_64.o endianconv_x86_64.o slowlog_x86_64.o scripting_x86_64.o bio_x86_64.o rio_x86_64.o rand_x86_64.o memtest_x86_64.o crc64_x86_64.o bitops_x86_64.o sentinel_x86_64.o notify_x86_64.o setproctitle_x86_64.o blocked_x86_64.o hyperloglog_x86_64.o latency_x86_64.o sparkline_x86_64.o redis-check-rdb_x86_64.o redis-check-aof_x86_64.o geo_x86_64.o lazyfree_x86_64.o module_x86_64.o evict_x86_64.o expire_x86_64.o geohash_x86_64.o geohash_helper_x86_64.o childinfo_x86_64.o defrag_x86_64.o siphash_x86_64.o rax_x86_64.o t_stream_x86_64.o listpack_x86_64.o localtime_x86_64.o lolwut_x86_64.o lolwut5_x86_64.o -z noexecstack -z relro --hash-style=gnu --build-id -static -m elf_x86_64 -L/usr/local/popcorn/x86_64/lib /usr/local/popcorn/x86_64//lib/crt1.o /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libmigrate.a /usr/local/popcorn/x86_64//lib/libstack-transform.a /usr/local/popcorn/x86_64//lib/libelf.a /usr/local/popcorn/x86_64//lib/libpthread.a /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libm.a /usr/local/popcorn/x86_64//lib/liblua.a /usr/local/popcorn/x86_64//lib/libhiredis.a /usr/local/popcorn/x86_64//lib/libjemalloc.a /usr/local/popcorn/x86_64//lib/libm.a -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc --end-group --cref -Map x86_64_aligned_map.txt -T redis-server_x86_ldscript -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2
++ /usr/local/popcorn/bin/gen-stackinfo -f redis-server_aarch64
++ /usr/local/popcorn/bin/gen-stackinfo -f redis-server_x86-64
++ cp redis-server_x86-64 redis-server
++ touch redis-server
+    [34;1mINSTALL[0m [37;1mredis-sentinel[0m
+#@printf '    %b %b\n' "\033[34;1m"LINK"\033[0m" "\033[37;1m"redis-cli"\033[0m" 1>&2;/usr/local/popcorn/bin/popcorn-link    -rdynamic -o redis-cli anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o ../deps/hiredis/libhiredis.a ../deps/linenoise/linenoise.o -lm -ldl -pthread -lrt
+    [34;1mLINK[0m [37;1mredis-cli[0m
++ echo '/usr/local/popcorn/bin/popcorn-link: called with -rdynamic -o redis-cli anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o'
+/usr/local/popcorn/bin/popcorn-link: called with -rdynamic -o redis-cli anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o
++ export POPCORN_COMPILATION_SCRIPTS=1
++ POPCORN_COMPILATION_SCRIPTS=1
++ POPCORN=/usr/local/popcorn
++ ARM64_POPCORN=/usr/local/popcorn/aarch64
++ CC=/usr/local/popcorn/bin/clang
++ HET_CFLAGS='-nostdinc -nostdlib -popcorn-migratable -fno-common -ftls-model=initial-exec'
++ ARM64_INC='-isystem /usr/local/popcorn/aarch64/include'
++ options=()
++ eoo=0
++ COMPILE_ONLY=0
++ LINK_ONLY=0
++ OBJS=()
++ [[ -n -rdynamic ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -o ]]
++ (( eoo ))
++ case "$1" in
++ BIN=redis-cli
++ shift
++ shift
++ [[ -n anet.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n adlist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n dict.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n redis-cli.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n zmalloc.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n release.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n ae.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n crc64.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n siphash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n crc16.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ LINK_ONLY=1
++ shift
++ [[ -n '' ]]
++ ALL_OBJS='anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o'
++ echo obj: otab anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o
+obj: otab anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o
++ echo OBJS: anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o
+OBJS: anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o
++ (( COMPILE_ONLY ))
++ SUFF_OBJS='anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o'
++ (( LINK_ONLY ))
++ echo obj: tab anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o
+obj: tab anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o
++ echo opt: -rdynamic
+opt: -rdynamic
++ '[' -z redis-cli ']'
++ /usr/local/popcorn/bin/clang -nostdinc -nostdlib -popcorn-migratable -fno-common -ftls-model=initial-exec -isystem /usr/local/popcorn/aarch64/include anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o -rdynamic -o redis-cli
+clang-3.7: warning: argument unused during compilation: '-nostdinc'
+clang-3.7: warning: argument unused during compilation: '-popcorn-migratable'
++ echo /usr/local/popcorn/bin/popcorn-ld: called with '-export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o redis-cli -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o -L. -L/home/mohamed/libs/func_instrum/'
+/usr/local/popcorn/bin/popcorn-ld: called with -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o redis-cli -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o -L. -L/home/mohamed/libs/func_instrum/
++ POPCORN=/usr/local/popcorn
++ LD=/usr/local/popcorn/bin/ld.gold
++ ALIGN='/usr/local/popcorn/bin/pyalign --compiler-inst /usr/local/popcorn'
++ POST_PROCESS=/usr/local/popcorn/bin/gen-stackinfo
++ X86_64_POPCORN=/usr/local/popcorn/x86_64
++ ARM64_POPCORN=/usr/local/popcorn/aarch64
++ CFLAGS=-nostdinc
++ LIBS='/lib/crt1.o /lib/libc.a /lib/libmigrate.a /lib/libstack-transform.a 
+	/lib/libelf.a  /lib/libpthread.a  /lib/libc.a  /lib/libm.a
+	/lib/liblua.a  /lib/libhiredis.a  /lib/libjemalloc.a  /lib/libm.a'
++ X86_64_LIBS=
++ ARM64_LIBS=
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/crt1.o '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/crt1.o '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libc.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libc.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libmigrate.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libmigrate.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libstack-transform.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libstack-transform.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libelf.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libelf.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libpthread.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libpthread.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libc.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libc.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libm.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libm.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/liblua.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/liblua.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libhiredis.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libhiredis.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libjemalloc.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libjemalloc.a '
++ for lib in '$LIBS'
++ X86_64_LIBS+='/usr/local/popcorn/x86_64//lib/libm.a '
++ ARM64_LIBS+='/usr/local/popcorn/aarch64//lib/libm.a '
++ options=()
++ eoo=0
++ OBJS=()
++ PRINT_VERSION=0
++ _USR_LIBRARY_PATH=()
++ _USR_LIBS=()
++ STANDARD_USR_LIBS=()
++ [[ -n -export-dynamic ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n --eh-frame-hdr ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -m ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n elf_x86_64 ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -dynamic-linker ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n /lib64/ld-linux-x86-64.so.2 ]]
++ (( eoo ))
++ case "$1" in
++ options+=("$1")
++ shift
++ [[ -n -o ]]
++ (( eoo ))
++ case "$1" in
++ BIN=redis-cli
++ echo found -o is: redis-cli
+found -o is: redis-cli
++ shift
++ shift
++ [[ -n -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/lib/x86_64-linux-gnu ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/lib/../lib64 ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib/x86_64-linux-gnu ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/lib ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/usr/lib ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n anet.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n adlist.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n dict.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n redis-cli.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n zmalloc.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n release.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n ae.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n crc64.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n siphash.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n crc16.o ]]
++ (( eoo ))
++ case "$1" in
++ OBJS+=("$1")
++ shift
++ [[ -n -L. ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n -L/home/mohamed/libs/func_instrum/ ]]
++ (( eoo ))
++ case "$1" in
++ _USR_LIBRARY_PATH+=("$1")
++ shift
++ [[ -n '' ]]
++ '[' 0 = 1 ']'
++ echo OPTIONS:
+OPTIONS:
++ echo OBJS: anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o
+OBJS: anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o
++ echo USER_LIBS:
+USER_LIBS:
++ echo STANDARD_USR_LIBS:
+STANDARD_USR_LIBS:
++ ALL_OBJS='anet.o adlist.o dict.o redis-cli.o zmalloc.o release.o ae.o crc64.o siphash.o crc16.o'
++ (( POPCORN_COMPILE_LINK ))
++ ARM64_OBJ='anet_aarch64.o adlist_aarch64.o dict_aarch64.o redis-cli_aarch64.o zmalloc_aarch64.o release_aarch64.o ae_aarch64.o crc64_aarch64.o siphash_aarch64.o crc16_aarch64.o'
++ X86_64_OBJ='anet_x86_64.o adlist_x86_64.o dict_x86_64.o redis-cli_x86_64.o zmalloc_x86_64.o release_x86_64.o ae_x86_64.o crc64_x86_64.o siphash_x86_64.o crc16_x86_64.o'
++ USR_LIBRARY_PATH='-L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/'
++ USR_LIBS=
++ USR_LIBS_ARM64=' '
++ '[' -z '' ']'
++ _USR_LIBS_x86_64=
++ USR_LIBS_x86_64=' '
++ ALL_LIBS_ARM='--start-group   -lc -lgcc -lgcc_eh --end-group'
++++ aarch64-linux-gnu-gcc -print-libgcc-file-name
+++ dirname /usr/lib/gcc-cross/aarch64-linux-gnu/5/libgcc.a
++ ARM64_LIBGCC=/usr/lib/gcc-cross/aarch64-linux-gnu/5
++ LDFLAGS='-z noexecstack -z relro --hash-style=gnu --build-id -static'
++ X86_64_LDFLAGS='-z noexecstack -z relro --hash-style=gnu --build-id -static -m elf_x86_64 -L/usr/local/popcorn/x86_64/lib /usr/local/popcorn/x86_64//lib/crt1.o /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libmigrate.a /usr/local/popcorn/x86_64//lib/libstack-transform.a /usr/local/popcorn/x86_64//lib/libelf.a /usr/local/popcorn/x86_64//lib/libpthread.a /usr/local/popcorn/x86_64//lib/libc.a /usr/local/popcorn/x86_64//lib/libm.a /usr/local/popcorn/x86_64//lib/liblua.a /usr/local/popcorn/x86_64//lib/libhiredis.a /usr/local/popcorn/x86_64//lib/libjemalloc.a /usr/local/popcorn/x86_64//lib/libm.a  -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc   --end-group'
++ ARM64_LDFLAGS='-z noexecstack -z relro --hash-style=gnu --build-id -static -m aarch64linux -L/usr/local/popcorn/aarch64/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/5 /usr/local/popcorn/aarch64//lib/crt1.o /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libmigrate.a /usr/local/popcorn/aarch64//lib/libstack-transform.a /usr/local/popcorn/aarch64//lib/libelf.a /usr/local/popcorn/aarch64//lib/libpthread.a /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libm.a /usr/local/popcorn/aarch64//lib/liblua.a /usr/local/popcorn/aarch64//lib/libhiredis.a /usr/local/popcorn/aarch64//lib/libjemalloc.a /usr/local/popcorn/aarch64//lib/libm.a  -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group   -lc -lgcc -lgcc_eh --end-group'
++ BIN_X86=redis-cli_x86-64
++ BIN_ARM=redis-cli_aarch64
++ BIN_X86_VANILLA=redis-cli_x86-64_VANILLA
++ BIN_ARM_VANILLA=redis-cli_aarch64_VANILLA
++ ARM64_MAP=arm64_map.txt
++ X86_64_MAP=x86_64_map.txt
++ /usr/local/popcorn/bin/ld.gold -o redis-cli_aarch64_VANILLA anet_aarch64.o adlist_aarch64.o dict_aarch64.o redis-cli_aarch64.o zmalloc_aarch64.o release_aarch64.o ae_aarch64.o crc64_aarch64.o siphash_aarch64.o crc16_aarch64.o -z noexecstack -z relro --hash-style=gnu --build-id -static -m aarch64linux -L/usr/local/popcorn/aarch64/lib -L/usr/lib/gcc-cross/aarch64-linux-gnu/5 /usr/local/popcorn/aarch64//lib/crt1.o /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libmigrate.a /usr/local/popcorn/aarch64//lib/libstack-transform.a /usr/local/popcorn/aarch64//lib/libelf.a /usr/local/popcorn/aarch64//lib/libpthread.a /usr/local/popcorn/aarch64//lib/libc.a /usr/local/popcorn/aarch64//lib/libm.a /usr/local/popcorn/aarch64//lib/liblua.a /usr/local/popcorn/aarch64//lib/libhiredis.a /usr/local/popcorn/aarch64//lib/libjemalloc.a /usr/local/popcorn/aarch64//lib/libm.a -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/share/karaoui/criu-project/popcorn-compiler/install/bin/../lib -L/lib -L/usr/lib -L. -L/home/mohamed/libs/func_instrum/ --start-group -lc -lgcc -lgcc_eh --end-group -Map arm64_map.txt -export-dynamic --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2
+redis-cli.c:1662: error: undefined reference to 'linenoiseSetMultiLine'
+redis-cli.c:1663: error: undefined reference to 'linenoiseSetCompletionCallback'
+redis-cli.c:1664: error: undefined reference to 'linenoiseSetHintsCallback'
+redis-cli.c:1665: error: undefined reference to 'linenoiseSetFreeHintsCallback'
+redis-cli.c:1673: error: undefined reference to 'linenoiseHistoryLoad'
+redis-cli.c:1679: error: undefined reference to 'linenoise'
+redis-cli.c:1707: error: undefined reference to 'linenoiseHistoryAdd'
+redis-cli.c:1708: error: undefined reference to 'linenoiseHistorySave'
+redis-cli.c:1723: error: undefined reference to 'linenoiseFree'
+redis-cli.c:1740: error: undefined reference to 'linenoiseClearScreen'
+redis-cli.c:1768: error: undefined reference to 'linenoiseFree'
+redis-cli.c:1679: error: undefined reference to 'linenoise'
+redis-cli.c:659: error: undefined reference to 'linenoiseAddCompletion'
+clang-3.7: error: linker command failed with exit code 1 (use -v to see invocation)
+Makefile:250: recipe for target 'redis-cli' failed
+make[1]: *** [redis-cli] Error 1
+make[1]: Leaving directory '/share/karaoui/criu-project/servers/redis/redis/src'
+Makefile:6: recipe for target 'all' failed
+make: *** [all] Error 2
